@@ -24,9 +24,7 @@ jobs:
 
 
       - name: Run Pylint Checks
-        run: |
-          # Run poetry run pylint src 
-          poetry run pylint src 
+        run: poetry run pylint src 
               
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
